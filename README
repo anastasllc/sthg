@@ -1,0 +1,32 @@
+// Introduction
+
+SimpleTH is a simple HTML / CSS / jQUery image gallery.
+
+
+// Installation
+
+Define the gallery width and height in the CSS file, fill in the <ul> elements with image paths and descriptions in the HTML file, make sure you're including your favorite version of jQuery, upload your left/right button images, and everything should work. One should be able to have multiple STHGs one a single page.
+
+
+// UI/UX
+
+Clicking the left button brings you to the preceding image by sliding it in from the right (displacing the current image) and the right button to the following image by sliding it in from the left (displacing the current image). Clicking right at the last image will simply loop back to the first image, though it will slide in from the right. This is actually the reason for the name: TH stands for "trivial Hamiltonian".
+
+
+// How it's done (in pseudocode)
+
+list.load();
+list.prepend(last_slide.clone());
+list.append(first_slide.clonse());
+
+if(next_index >= list.length())
+{
+  current_index = 0;
+  list.update();
+}
+
+if(index < 0)
+{
+  current_index = list.length() - 1;
+  list.update();
+}

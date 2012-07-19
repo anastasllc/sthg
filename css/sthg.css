@@ -1,0 +1,62 @@
+.gallery
+{
+    width: 940px;
+    height: 40px;
+    position: relative;
+    z-index: 100;
+}
+
+.gallery .viewport
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 110;
+}
+
+.gallery .viewport ul
+{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+
+.gallery .viewport ul li
+{
+    display: inline-block;
+    position: absolute;
+}
+
+.gallery .viewport ul li img
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.gallery .viewport ul li p
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0f7bbb;
+    color: white;
+    padding: 0.6em 0 0.6em 0.6em;
+    margin: 0;
+}
+
+.gallery .left, .gallery .right
+{
+    position: absolute;
+    z-index: 120;
+    cursor: pointer;
+}
