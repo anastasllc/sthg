@@ -5,7 +5,7 @@ SimpleTH is a simple HTML / CSS / jQUery image gallery.
 
 // Installation
 
-Define the gallery width and height in the CSS file, fill in the <ul> elements with image paths and descriptions in the HTML file, make sure you're including your favorite version of jQuery, upload your left/right button images, and everything should work. One should be able to have multiple STHGs one a single page.
+Define the .gallery and li element width and height in the CSS file, fill in the <ul> elements with image paths and descriptions in the HTML file, make sure you're including your favorite version of jQuery, upload your left/right button images, and everything should work. One should be able to have multiple STHGs one a single page.
 
 
 // UI/UX
